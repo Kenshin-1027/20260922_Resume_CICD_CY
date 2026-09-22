@@ -12,7 +12,11 @@ let newestFirst = true
 // ---------- 把一条数据变成一张卡片 ----------
 function createWorkCard(work) {
   const item = document.createElement('li')
-  item.className = 'work-card'
+  // 卡片封面底色由 CSS 的 .work-<slug> 决定（.work-community / .work-greeting-card / ...）。
+  // 静态 HTML 里写的是 class="work-card work-blog"，重渲染时必须把 slug 一起写回来：
+  // 只写 'work-card' 会把每个作品自己的封面底色丢掉，四张卡变成同一个颜色。
+  // 兜底：数据里没写 slug 时至少保住 work-card，不让样式整体失效。
+  item.className = work.slug ? `work-card ${work.slug}` : 'work-card'
 
   // 年份徽标，贴在封面右上角
   const year = document.createElement('span')
