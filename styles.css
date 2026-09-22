@@ -131,6 +131,7 @@ footer { border-top: 1px solid var(--line); padding: 25px 0; }
 .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 25px; }
 .footer-name { font-size: 20px; }
 .footer-name > span { font-size: 17px; margin-left: 8px; color: var(--muted); }
+.footer-links { display: flex; align-items: center; gap: 26px; }
 .footer-inner a { font-size: 16px; }
 .back-top { white-space: nowrap; }
 
