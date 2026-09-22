@@ -1,390 +1,172 @@
 <!DOCTYPE html>
-<html lang="zh-CN" data-page-node-id="xOgjEkys68Jidszv99N0Cu">
- <head data-page-node-id="xe14OtKoUrZFKDBk8URUjp">
-  <meta charset="utf-8" data-page-node-id="SK0pREFU3oisRrQlCTo88L"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport" data-page-node-id="EA1oy5iUFiSPd8cCGzmGzA"/>
-  <meta content="noindex, nofollow" name="robots" data-page-node-id="idFJPVKbEsQ31pB8WaBZ5R"/>
-  <meta content="陈林希的个人主页：学习经历、技能与课程作品。" name="description" data-page-node-id="oBRkT3PEmf2MPEzEnPeK0a"/>
+<html lang="zh-CN" data-page-node-id="XWeRgcyDNpCL1p9xkKIUvs">
+ <head data-page-node-id="geOGIMf89igWxNc13NYJYI">
+  <meta charset="utf-8" data-page-node-id="yWmHuciIOx1dukSJxBlrY0"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport" data-page-node-id="19bgbQHygPeV9hsweOEgzs"/>
+  <meta content="noindex, nofollow" name="robots" data-page-node-id="OzEJLAFJJ0MAoaLwHYEhLe"/>
+  <!-- 标题和简介由 app.js 从 content.js 写进来，这里先留一份默认值 -->
+  <meta content="个人主页" name="description" data-page-node-id="JbfkxO3WoobOsQzd7SfzMI"/>
   <title>
-   陈林希 · 个人主页
+   个人主页
   </title>
-  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" data-page-node-id="WGjkIBnqK9PHJLyNtxDGo2"/>
-  <!-- CSS 负责颜色、字体、布局；defer 让 JavaScript 在 HTML 解析完成后执行。 -->
-  <link href="styles.css" rel="stylesheet" data-page-node-id="zsAK3WnovTPjmV2ybqwzaV"/>
-   <script src="works-data.js" defer></script>
-  <script src="works-render.js" defer></script>
+  <link href="assets/favicon.svg" rel="icon" type="image/svg+xml" data-page-node-id="4R5Q5LLx9OmB8H8b6LhFpa"/>
+  <link href="styles.css" rel="stylesheet" data-page-node-id="zvpK39i5T6ZvrEIx9WB2X8"/>
+  <!-- content.js 必须排在 app.js 前面：后者要读前者定义的内容。
+       defer 让两个文件都在 HTML 解析完之后按顺序执行。 -->
+  <script src="content.js" defer></script>
   <script src="app.js" defer></script>
  </head>
- <body data-page-node-id="AmkICBlshpieHgXfuYO8pE">
-  <a class="skip-link" href="#main" data-page-node-id="sw1ZltpsZQdBgYhpPghCvg">
+ <body data-page-node-id="fZBgG0BxJsV1OVwU5e7rTG">
+  <a class="skip-link" href="#main" data-page-node-id="mUVnICPGWxt9y5wj6vbADn">
    跳到正文
   </a>
-  <!-- 第 4 课新增①：顶部阅读进度条，宽度由 JavaScript 控制 -->
-  <div class="reading-progress" id="reading-progress" data-page-node-id="p2FwuyKB6xxDgSZArDQ5hT">
+  <!-- 页面内容由 app.js 渲染，关掉 JavaScript 会是空的，这里明确说一句 -->
+  <noscript class="noscript" data-page-node-id="O34BPZ4qWOKBllUCZJGkzR">
+   这个页面的内容由 content.js 里的数据渲染而成，请开启 JavaScript 后查看。
+  </noscript>
+  <div class="reading-progress" id="reading-progress" data-page-node-id="yJEmFmnZWegAfxjIw0Eoqu">
   </div>
-  <header class="site-header" data-page-node-id="7q2N8TKg86cjQu7gM628Ua">
-   <div class="container header-inner" data-page-node-id="L11gEI6g2IxoeJUfBfPmHp">
-    <a class="brand" href="#about" data-page-node-id="yLc3GLzdAol8FsyOJ9RGT0">
-     陈林希
-     <span>
-      Chen Linxi
-     </span>
-    </a>
-    <!-- href="#栏目ID" 是原生锚点：即使不加载 JavaScript，也能跳到对应栏目。 -->
-    <nav aria-label="主导航" data-page-node-id="EyCD2NnXZcokPiVW3Y8VM4">
-     <a href="#about" data-page-node-id="IxYvmNAeHXwEZPYVGL1GIt">
+  <header class="site-header" data-page-node-id="cw3f6LGrOY53o2yudVKXEY">
+   <div class="container header-inner" data-page-node-id="mzHjCFi1Dhj8BnpeNcW0wV">
+    <a class="brand" data-block="brand" href="#about" data-page-node-id="DYXpruaH1dpXijNbDDi2St"></a>
+    <!-- href="#栏目ID" 是原生锚点：不加载 JavaScript 也能跳到对应栏目。
+         导航和栏目要成对出现，tools/check-page.mjs 会核对每个 #id 都有对应的 id。 -->
+    <nav aria-label="主导航" data-page-node-id="OATAGPmzzVVA9lttRnMBeg">
+     <a href="#about" data-page-node-id="4EtPJuTVVYo1xhgyzxFHGx">
       关于
      </a>
-     <a href="#experience" data-page-node-id="jBbtX71qCk80EUEBaeNWrx">
+     <a href="#experience" data-page-node-id="tzo20GLK084kM0G5xGcogJ">
       经历
      </a>
-     <a href="#projects" data-page-node-id="Bv6t0t1g1joKxkeYLwugfZ">
+     <a href="#projects" data-page-node-id="6CfbQgmEGNxzkGAB6s8aYd">
       项目
      </a>
-     <a href="#skills" data-page-node-id="0ICVMdN2fomQHWymCM7n4t">
+     <a href="#skills" data-page-node-id="8NcNltNBknIoK6kDDFH27Y">
       技能
      </a>
-     <a href="#portfolio" data-page-node-id="0iDdUHdYN1MySCyzgzssb0">
+     <a href="#portfolio" data-page-node-id="vhgHs3xuOZkoxSbYwEIZIn">
       作品
      </a>
-     <a href="#teaching" data-page-node-id="aT72kR4eG6nRvCLKAbIqQW">
+     <a href="#teaching" data-page-node-id="YierW864BvLgx0Et7jsmr5">
       学习
      </a>
-     <a href="#publications" data-page-node-id="40yX1BPBI743rglP6DGBC1">
+     <a href="#publications" data-page-node-id="AMlDNC2P07GikYJKkvDere">
       记录
      </a>
     </nav>
    </div>
   </header>
-  <main id="main" data-page-node-id="GdqLE3N0zTUm78I8KgUAEN">
-   <!-- HTML 练习：修改姓名、研究方向、照片路径和联系方式。 -->
-   <section class="hero" id="about" data-page-node-id="KrcV0D6vdVXXDvjXhtkww5">
-    <div class="container" data-page-node-id="lFYDryNVCs9g4e4LRnLpGV">
-     <div class="hero-top" data-page-node-id="pkCn1Lf4EI4TmUD7LjTBZN">
-      <div class="hero-copy" data-page-node-id="NuOEO68ln56QCjP2CtHe9u">
-       <h1 data-page-node-id="XDSNHr0KSnY50Du4gZDOBl">
-        陈林希
-        <span data-page-node-id="PW7kqdk4BppqkeFIF52ewm">
-         Chen Linxi
-        </span>
-       </h1>
-       <p class="hero-role" data-page-node-id="nD4a4NDWXjZ1D1QobjDbJb">
-        在校学生 · 前端开发方向
-       </p>
-       <p class="hero-school" data-page-node-id="JAfAS1DFOkv8GVYx4ABG2v">
-        广东科学技术职业学院 · 25大模型应用产业学院班
-       </p>
-      </div>
-      <div class="hero-visual" data-page-node-id="sYaqWOzkLiN8Sotkz84T6G">
-       <figure data-page-node-id="xXOU1j9AkgsNDxKtxKHxSt">
-        <img alt="个人头像占位图，请替换为自己的图片" height="220" src="assets/avatar.svg" width="220" data-page-node-id="y42birT1oLrXl3jzHRO8OF"/>
-       </figure>
-      </div>
-     </div>
-     <div class="research-direction" id="research-direction" data-page-node-id="RjWZZeeflTlrojILyhUgCl">
-      <span class="eyebrow" data-page-node-id="l6fSH9UU6sFvimlyPLEObQ">
-       学习方向
-      </span>
-      <p data-page-node-id="oDKM2Q7O3zohvmXxQ64qCf">
-       从写静态页面开始，现在能自己排响应式布局、用 Git 管版本，并让 GitHub Actions 自动发布。数据库和接口还在学。
-      </p>
-     </div>
-     <div class="profile-details" data-page-node-id="Y6uktg6fXrbIC0dvaMRvLh">
-      <div data-page-node-id="hemz6Gs52Asw1Z1MSmCUsB">
-       <span data-page-node-id="CFpUyuOXoucxiC1CCQN4ZP">
-        学习阶段
-       </span>
-       <p data-page-node-id="tyVx3K4wHBdRPHjZE81f4f">
-        在读学生
-       </p>
-      </div>
-      <div data-page-node-id="c1rWNB4YylJV2wAojVoVbx">
-       <span data-page-node-id="GK1ENAxjlm9iE0iZsuo3L5">
-        所在城市
-       </span>
-       <p data-page-node-id="JZA7IvCElHuwWHnBdGKz09">
-        珠海
-       </p>
-      </div>
-      <div data-page-node-id="CFfaWCi6tePUpOdDwaPXub">
-       <span data-page-node-id="0pnKvrIqbT0vEkwbqgTQNf">
-        联系
-       </span>
-       <p data-page-node-id="5ijAWVqwG7ZMuAVuJuGdfP">
-        18902702190
-       </p>
-      </div>
-      <div data-page-node-id="QAQMSBP1OKiosI0ANOMX5k">
-       <span data-page-node-id="wPm2g8kIOOJjDKbHBUvyqT">
-        学校地址
-       </span>
-       <p data-page-node-id="ksdINohKm0r8qwnQ6Kd8PZ">
-        广东科学技术职业学院
-       </p>
-      </div>
-     </div>
+  <main id="main" data-page-node-id="Y2QpahTA6xJrt8CSiHG0E4">
+   <!-- 以下每个 data-block 都是内容的挂载点：
+        app.js 会去找 blocks 里同名的渲染规则，用 content.js 里同名的数据填进来。
+        这里只留栏目标题和骨架，具体内容一个字都不用写在这。 -->
+   <section class="hero" id="about" data-page-node-id="02HTo3q4efobwqXLpnbS5h">
+    <div class="container" data-page-node-id="hibV8QNHJVoCDW7BZ7t0Le">
+     <div class="hero-top" data-block="hero" data-page-node-id="P6TRkYQXQLq9G4OLJnvDrk"></div>
+     <div class="research-direction" data-block="direction" id="research-direction" data-page-node-id="ScTtep1VwP8upWpHeNI0TN"></div>
+     <div class="profile-details" data-block="details" data-page-node-id="nfKyAjoRwq5aHckkOybVNL"></div>
     </div>
    </section>
-   <!-- 每个栏目复用 section → container → 标题/内容 的结构，统一由 CSS 控制样式。 -->
-   <section class="section" id="experience" data-page-node-id="CEvLtpT0Si2jS4QUnxRlo9">
-    <div class="container" data-page-node-id="WJwzRdIUa1rSGCXuRUCdkl">
-     <header class="section-heading" data-page-node-id="txISUm8mt7DmpDVKTZXIYZ">
-      <h2 data-page-node-id="BUIeUdy8cLaW96aOqMTbbJ">
+   <section class="section" id="experience" data-page-node-id="ZSlYquKWpajr1HTsg3c9QZ">
+    <div class="container" data-page-node-id="Pek0Bsw5RMeUZKtVHCDHSU">
+     <header class="section-heading" data-page-node-id="fzMVuTMnlzmK2DyBHEFWcy">
+      <h2 data-page-node-id="HjYLoD6rf4XfoOCnacyuCy">
        教育与工作经历
       </h2>
      </header>
-     <div class="section-content" data-page-node-id="hJ3mgPjCAfsMBqFdGisRWC">
-      <!-- TASK-HTML：复制 experience-item 可增加一条自己的经历。 -->
-      <div class="experience-item" data-page-node-id="wGEMRTG6JjD3DvHHH56Qgz">
-       <p class="experience-heading" data-page-node-id="4eAZ5rkwSR3G6qbQCzgvCQ">
-        <strong data-page-node-id="MuEi74Z2qgntsB3dZQHLSM">
-         广东科学技术职业学院 · 25大模型应用产业学院班
-        </strong>
-        <time data-page-node-id="QsYpnTwBElDPMH7LXbmqLT">
-         在读
-        </time>
-       </p>
-       <p class="experience-detail" data-page-node-id="ZfNqA3mXCPknUZ6AC1GgLr">
-        课程进行到第 6 周，做完 5 个网页练习，第一个是自己设计并发布上线的个人主页。
-       </p>
-      </div>
-      <div class="experience-item">
-       <p class="experience-heading">
-        <strong>
-         个人练习 · Git 与网站发布
-        </strong>
-        <time>
-         2026 年 9 月起
-        </time>
-       </p>
-       <p class="experience-detail">
-        把每次改动提交到个人仓库，用 GitHub Actions 自动发布到 GitHub Pages。改完推送就会更新，不用手动传文件。
-       </p>
-      </div>
-     </div>
+     <div class="section-content" data-block="experience" data-page-node-id="qGSEfeArAIDYroW1QtGnbI"></div>
     </div>
    </section>
-   <section class="section" id="projects" data-page-node-id="IAylGjDGrqBguHeygNuw1l">
-    <div class="container" data-page-node-id="FQx9bVgrACqYqyLjW1yv9P">
-     <header class="section-heading" data-page-node-id="Rj1DbMKWdi8TJPmt8YD1cF">
-      <h2 data-page-node-id="yIuFAvsUfEopnZy5WSgmHr">
+   <section class="section" id="projects" data-page-node-id="FiuFdh3yr98wf0IpFd5A5W">
+    <div class="container" data-page-node-id="LN1RXQQcwe8bMeTFEk3Aph">
+     <header class="section-heading" data-page-node-id="3fCFzW01c2ID3Mc4Bt9KPJ">
+      <h2 data-page-node-id="AVvCA8YSM6AWh7uNYAOPFe">
        项目经历
       </h2>
      </header>
-     <div class="section-content" data-page-node-id="eSgJ5CtzloyLiNU0oFcB0r">
-      <article class="research-item" data-page-node-id="ek46R0YUtUIqulcYAvfZWy">
-       <h3 data-page-node-id="pNfpSXFBpzMZTCuZ2N207Y">
-        <time data-page-node-id="0KbEWfHksXR5G52eaFdgyd">
-         2026 年 9 月
-        </time>
-        个人主页（课程项目）
-       </h3>
-       <p data-page-node-id="pT4Jiqbg1YBCvVq8XbDRIV">
-        基于课程模板做个人主页。作品列表不写在 HTML 里，而是用 JavaScript 从一份数据文件渲染，以后加作品只改数据。用 Git 记录改动，推送到自己的仓库后由 GitHub Actions 自动发布。测试时发现 4 张作品卡的封面颜色全一样，查到是脚本重建卡片时把标识类名覆盖掉了，改掉后恢复正常。
-       </p>
-      </article>
-      <article class="research-item">
-       <h3>
-        <time>
-         2026 年 9 月
-        </time>
-        作品筛选与排序
-       </h3>
-       <p>
-        把 4 个作品写成一份数据，每个记着年份和标签。页面加载后用 JavaScript 生成卡片，上面一排按钮可以只看某一类作品，旁边的按钮按年份从新到旧或从旧到新排。
-       </p>
-      </article>
-     </div>
+     <div class="section-content" data-block="projects" data-page-node-id="ZpuUhlvMemqnxUaT0DOWTN"></div>
     </div>
    </section>
-   <section class="section" id="skills" data-page-node-id="ZPJQr01MFmnCHRR8aiKs4d">
-    <div class="container" data-page-node-id="KSg9TTPg7H4PG3cgHfGcX0">
-     <header class="section-heading" data-page-node-id="nz2mDazA1O2JJNcfwf5Wg1">
-      <h2 data-page-node-id="IZKyxPBoeCB77p12kXCgo4">
+   <section class="section" id="skills" data-page-node-id="FwQgaSTDCSC5LtzhfASxYk">
+    <div class="container" data-page-node-id="xvn7j4WBlHC2oyUHci39nW">
+     <header class="section-heading" data-page-node-id="daAJkKDF87Wdapldy3WnTV">
+      <h2 data-page-node-id="EpcAVk2qqoFxHmWBCXBbj1">
        技能与实践
       </h2>
      </header>
-     <div class="section-content" data-page-node-id="FB44fwc9kkcEcXNYGkEv2y">
-      <ul class="skills-list" data-page-node-id="ALW38Z4FzmhINyfYxQ1DGG">
-       <li data-page-node-id="EC4Sy2AzHlpxn2dpfBWycI">
-        <strong data-page-node-id="cQ1EcFOQqWyUMI4QpDAnVq">
-         页面结构
-        </strong>
-        HTML5 语义标签、表单、图片与链接；标题层级和图片 alt 会逐个检查。
-       </li>
-       <li data-page-node-id="5lJ8D2y1VSg4QgyAmGXbul">
-        <strong data-page-node-id="VCKVNEmmimKOKFepj2usn2">
-         页面样式
-        </strong>
-        CSS3 配色与字体、Flex 和 Grid 布局、媒体查询；做了 1000px 和 640px 两档断点，手机上单列显示。
-       </li>
-       <li data-page-node-id="zvY2mGh6sBxQFjjMOs799l">
-        <strong data-page-node-id="SRdZuEjc7BKcnKf3RSE5Hw">
-         开发工具
-        </strong>
-        Git 常用命令（clone、commit、remote、push）、GitHub Pages 与 Actions；会用浏览器检查面板和控制台排查样式问题。
-       </li>
-      </ul>
+     <div class="section-content" data-page-node-id="kaCTwpiColyj5wnNCcaYge">
+      <ul class="skills-list" data-block="skills" data-page-node-id="CdEkgaDzFfPXxWwi9oYkus"></ul>
      </div>
     </div>
    </section>
-   <section class="section" id="portfolio" data-page-node-id="tu00iSLmZJcAZB6EgIXvv1">
-    <div class="container" data-page-node-id="Db1hwk6RYp49KGgOhj3NQw">
-     <header class="section-heading" data-page-node-id="inwaWcKE20gi8lzQkG85Cg">
-      <h2 data-page-node-id="8bYZiGOtBdlPVk5eemR9Jv">
+   <section class="section" id="portfolio" data-page-node-id="GkaVtA5mT85aFe4jPDkoWN">
+    <div class="container" data-page-node-id="vaVsK9BjilirMggP7saT12">
+     <header class="section-heading" data-page-node-id="CtCLvgilLbZHr6WJPyaFmu">
+      <h2 data-page-node-id="XIHeMchDNJsIFup5J6wC3a">
        作品门户
       </h2>
-      <p class="works-notice" data-page-node-id="yivUjgDBJ4qCnJtLwk0Y5B">
-       以下 4 个是课程里的示例项目，点卡片可以打开实际网页；自己的作品做好后替换这里。
-      </p>
+      <p class="works-notice" data-block="worksNotice" data-page-node-id="SetdpIjjJ0chnJuHO9HOFM"></p>
      </header>
-     <!-- 第 5 课新增：筛选与排序工具条。里面的按钮由 JavaScript 生成，
-          不写 JS 时这里是空的，页面照常显示全部作品。 -->
-     <div class="works-toolbar" data-page-node-id="n48w56zmQ21JmMnVzEssfk">
-      <div class="works-tags" id="works-tags" data-page-node-id="WGkaIp5ELnZOUGyCVHBZBh">
-      </div>
-      <button class="works-sort" id="works-sort" type="button" data-page-node-id="QRDcClVIQEuuaJJb1UBptN">
+     <!-- 标签按钮和排序按钮由 app.js 生成：不加载 JavaScript 时这里是空的，
+          但下面的作品列表在 HTML 里也没有，所以整块都需要 JavaScript。 -->
+     <div class="works-toolbar" data-page-node-id="aMfgnFF8Ehm5FC1fFvHdV0">
+      <div class="works-tags" id="works-tags" data-page-node-id="z6ugPIPMZht1B7yhpli2jJ"></div>
+      <button class="works-sort" id="works-sort" type="button" data-page-node-id="boMI3nk9Zyt2q68kH1KGkD">
        按年份：新→旧
       </button>
      </div>
-     <ol class="portfolio-list" data-page-node-id="hUdq8cHc3tCor2g1l7a9FG">
-      <li class="work-card work-blog" data-page-node-id="lnhsEKij8UBo79Ry8vZLb0">
-       <a href="https://ffd-p2-blog.netlify.app/" rel="noopener noreferrer" target="_blank" data-page-node-id="h8SgQlJzncHgXHZqDnc1K7">
-        <div class="work-cover" data-page-node-id="mhuwGOnNASj3Xglw6iwFng">
-         <img alt="长风成卷 · 博客应用的实际网页截图" decoding="async" height="800" src="assets/work-blog.png" width="1200" data-page-node-id="VANGRAL8QgIujKmkVUGHH6"/>
-        </div>
-        <div class="work-copy" data-page-node-id="wjHsaFL9grifgJpCIGWdmF">
-         <h3 data-page-node-id="fox0DAsCwxt7JxwXt3w22q">
-          长风成卷 · 博客应用
-         </h3>
-         <p data-page-node-id="TNFBcfh4udmFWk6n19MiOS">
-          文章展示、接口与数据库。
-         </p>
-        </div>
-       </a>
-      </li>
-      <li class="work-card work-community" data-page-node-id="0iNTrp6ONfesztDBSps33T">
-       <a href="https://ffd-p3-community.netlify.app/" rel="noopener noreferrer" target="_blank" data-page-node-id="0XO9iQV95RVTyUMHqAAmHJ">
-        <div class="work-cover" data-page-node-id="wy2EpeeCwnQp1WceSyaHnE">
-         <img alt="群像云图 · 社区应用的实际网页截图" decoding="async" height="800" src="assets/work-community.png" width="1200" data-page-node-id="LM3JxlFAILy6ZlgVz9cGMS"/>
-        </div>
-        <div class="work-copy" data-page-node-id="dnQyy9P1fnjG1kG3FuY2Un">
-         <h3 data-page-node-id="VPPfIjNmFDo5GRCof8SE60">
-          群像云图 · 社区应用
-         </h3>
-         <p data-page-node-id="vvA6wXFcfxgDaaMqMuPDJs">
-          内容发布与社区互动。
-         </p>
-        </div>
-       </a>
-      </li>
-      <li class="work-card work-greeting-card" data-page-node-id="5XZkMT64jwqh8PMzADgClO">
-       <a href="https://ffd-p4-greeting-card.netlify.app/" rel="noopener noreferrer" target="_blank" data-page-node-id="YD6FE95ckDtVrAVBXdhZEx">
-        <div class="work-cover" data-page-node-id="FnCNtUqxJqNzWafdl98DUM">
-         <img alt="一笺心意 · 祝福卡片的实际网页截图" decoding="async" height="800" src="assets/work-greeting-card.png" width="1200" data-page-node-id="BTYOP2XKZMzuOfaMsnfjdL"/>
-        </div>
-        <div class="work-copy" data-page-node-id="hKLB9UxeU2wX77WPo52CQ6">
-         <h3 data-page-node-id="5MZmjpBBwmgMF3ZiWclHY7">
-          一笺心意 · 祝福卡片
-         </h3>
-         <p data-page-node-id="h6HJ2FIDn5Ag3SxmnEjE4Y">
-          卡片制作与作品分享。
-         </p>
-        </div>
-       </a>
-      </li>
-      <li class="work-card work-music-station" data-page-node-id="FUWlqcD09sv64fGM6KsWRA">
-       <a href="https://ffd-p5-music-station.netlify.app/" rel="noopener noreferrer" target="_blank" data-page-node-id="kHZWoP7R137JDFQJizXixV">
-        <div class="work-cover" data-page-node-id="fhePx91lCTv9Hb8tg1SO1j">
-         <img alt="星声音乐站 · 音乐应用的实际网页截图" decoding="async" height="800" src="assets/work-music-station.png" width="1200" data-page-node-id="8H1UxJenYPXQrbwUB24wKK"/>
-        </div>
-        <div class="work-copy" data-page-node-id="zdBtu1ujPQPELF7gfQ22CT">
-         <h3 data-page-node-id="LRZoR2YigcwB6LJe6OIrHx">
-          星声音乐站 · 音乐应用
-         </h3>
-         <p data-page-node-id="devNV3vZdbjORWkGikOAIy">
-          网页音频与交互实践。
-         </p>
-        </div>
-       </a>
-      </li>
-     </ol>
+     <ol class="portfolio-list" data-block="works" data-page-node-id="1BOiDFSkx8kJUzEXOPOvxv"></ol>
     </div>
    </section>
-   <section class="section" id="teaching" data-page-node-id="oL4W0kOmXX1ESJpvrcLluu">
-    <div class="container" data-page-node-id="CMwwgRfrE4RCLDQHJsiXsZ">
-     <header class="section-heading" data-page-node-id="ayCko6XitCFcu4pc2cuVmh">
-      <h2 data-page-node-id="9LpQ7VyjzV7UoBwf9PoPfL">
+   <section class="section" id="teaching" data-page-node-id="fJ87GJFAXV0lub5PQTFJ2j">
+    <div class="container" data-page-node-id="7Jj54glFkJv59qtbiuHr9l">
+     <header class="section-heading" data-page-node-id="6xvlCJF8XkuDKw8uWg1fvC">
+      <h2 data-page-node-id="LFDL5dub74UwSA0ceY3pUJ">
        学习与实践
       </h2>
      </header>
-     <div class="section-content" data-page-node-id="n7CVaqlaKjEZT5dc8Cpytc">
-      <div class="teaching-group" data-page-node-id="lUF4nT9TaEBUWiSYDeXbWR">
-       <h3 data-page-node-id="BTdQCVyyBx7RrRxih3pGTh">
+     <div class="section-content" data-page-node-id="P3ycWdZYT5GxgyFKLtkzzf">
+      <div class="teaching-group" data-page-node-id="GKoPdxgkF5FCHT35gi2ZEL">
+       <h3 data-page-node-id="EeRcdrMIstYrHaGoob4WDA">
         本学期目标
        </h3>
-       <ol data-page-node-id="sj1giDGQwEWoWuPVhzalYd">
-        <li data-page-node-id="TDQ5IyGaPibgAGnycC8Ae8">
-         每次课留一个能跑起来的小改动，不留半成品。
-        </li>
-        <li data-page-node-id="CK9oZpmIEXVnZgErEqsjLa">
-         改过的 HTML、CSS、JavaScript 都能说清为什么这么写。
-        </li>
-        <li data-page-node-id="JzH7ljgG8usBFKkdwdZhEH">
-         每个作品都用 Git 记录版本，别人打开网址就能看到。
-        </li>
-       </ol>
+       <ol data-block="goals" data-page-node-id="QWvrNQo1mUyLRDghKRt9hn"></ol>
       </div>
      </div>
     </div>
    </section>
-   <section class="section" id="publications" data-page-node-id="OqtyyzJfWbj80HmppfBO1W">
-    <div class="container" data-page-node-id="LG3NkR0UGSRHF5IaoICZDB">
-     <header class="section-heading" data-page-node-id="L5oXuRlKlGcsEKwf0jpHRi">
-      <h2 data-page-node-id="uzpplacDYVJbpaTRFjzwKA">
+   <section class="section" id="publications" data-page-node-id="O5wA7vJA8zYKCF3DeBmADa">
+    <div class="container" data-page-node-id="kQlFugFJn0WZzTNCZ7sHOJ">
+     <header class="section-heading" data-page-node-id="zrBYbuzAZbjaZM5ayy9HnE">
+      <h2 data-page-node-id="ZDJdI7iUrLrVlfsxmfWwV1">
        学习记录
       </h2>
      </header>
-     <div class="section-content" data-page-node-id="zlhmpFO71HwQTHufQb6jjj">
-      <div class="publication-group" data-page-node-id="2n7fH8aKwGHm5Cm1NgfnPo">
-       <h3 data-page-node-id="xE8kV5Msw38rk4fSKd7WWU">
+     <div class="section-content" data-page-node-id="APZ2AkCUuWjPTM755jkwBK">
+      <div class="publication-group" data-page-node-id="3LbX77j0jP3CHMkdYUu5zb">
+       <h3 data-page-node-id="vXAi5IhiaiWEi4NkOePaUF">
         过程记录
        </h3>
-       <ol class="references" data-page-node-id="0gPE2Ksxm2FkRnq2DH7oEy">
-        <li data-page-node-id="gL08BxOOuX0iq5ZojIAC5l">
-         <strong>2026-09-22</strong> 完成个人主页，提交到自己的仓库，由 GitHub Actions 自动发布到 GitHub Pages。
-        </li>
-        <li data-page-node-id="vc65YYauPKZk7y5x5DLEiW">
-         <strong>2026-09-22</strong> 修好作品卡片封面配色的问题，并写了一份问题记录：重现步骤、实际现象、涉及文件、修复内容、重测结果。
-        </li>
-        <li>
-         <strong>2026-09-22</strong> 在 1366px 和 390px 两档宽度下检查页面，没有横向滚动条；用自检脚本核对过文件、链接锚点和图片 alt。
-        </li>
-       </ol>
+       <ol class="references" data-block="records" data-page-node-id="2zAJh63o6edq9f0bldJqWt"></ol>
       </div>
      </div>
     </div>
    </section>
   </main>
-  <!-- 第 4 课新增：这两块由 JavaScript 控制，不写 JS 时它们不会出现 -->
-  <p aria-live="polite" class="section-indicator" id="section-indicator" data-page-node-id="04kV9vj6E6Dwjd0mAQONJG">
+  <!-- 这两块由 app.js 控制，不加载 JavaScript 时它们不会出现 -->
+  <p aria-live="polite" class="section-indicator" id="section-indicator" data-page-node-id="k2BQs3deswfsIAYdZv3HTU">
   </p>
-  <button aria-label="返回页面顶部" class="to-top" id="to-top" type="button" data-page-node-id="KbDOS8z2GAnyMqnRCMRIfA">
+  <button aria-label="返回页面顶部" class="to-top" id="to-top" type="button" data-page-node-id="TEGZZdwcBZ7ryaTEmBSBDo">
    ↑
   </button>
-  <footer data-page-node-id="KSrs67GU8Brz4suxkerSV7">
-   <div class="container footer-inner" data-page-node-id="epM6Ybv4X3o7GzA03lbVUo">
-    <div class="footer-name">
-     陈林希
-     <span>
-      Chen Linxi
-     </span>
-    </div>
-    <div class="footer-links">
-     <a href="#about" data-page-node-id="Ga8wYy7OBu6vakKSy1P71V">
+  <footer data-page-node-id="hzEdTPQV9plB4RuESifnTO">
+   <div class="container footer-inner" data-page-node-id="i8dYZhf4G8uYIzxeWNQai3">
+    <div class="footer-name" data-block="footerName" data-page-node-id="raXqbMAYOP3IHlNIzaHpHH"></div>
+    <div class="footer-links" data-page-node-id="m8btNZ8BydbYb177CssvCN">
+     <a href="#about" data-page-node-id="IM9BNuH6KXNnmJNxDkU3ln">
       回到顶部
      </a>
-     <a href="#portfolio" data-page-node-id="rVVTIgY33UqmjVbmSgZYGc">
+     <a href="#portfolio" data-page-node-id="AeSXKxrrUHrlvCDBYkYIgp">
       作品门户
      </a>
     </div>

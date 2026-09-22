@@ -46,6 +46,9 @@ h3 { font-size: 22px; font-weight: 600; color: var(--subheading); }
 .container { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: fixed; top: -100px; left: 16px; z-index: 30; padding: 10px; background: white; }
 .skip-link:focus { top: 12px; }
+/* 关掉 JavaScript 时页面没有内容，给一句明确的说明，别让人以为页面坏了。
+   noscript 里的东西只在不支持/禁用 JS 时才渲染，所以这条规则平时不生效。 */
+.noscript { display: block; padding: 20px 24px; background: var(--heading-wash); color: var(--heading); text-align: center; }
 
 /* 2. 顶部只保留姓名和普通锚点导航。 */
 .site-header { position: sticky; top: 0; z-index: 10; background: #fbfaf6f5; backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
@@ -104,10 +107,10 @@ h1 span { font-size: 32px; font-weight: 400; letter-spacing: 0; color: var(--sub
 .work-card > a { display: block; height: 100%; border: 1px solid #ddd8cb; border-radius: 6px; overflow: hidden; background: #fffdf8; transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease; }
 .work-card > a:hover { text-decoration: none; transform: translateY(-4px); border-color: #b7a88d; box-shadow: 0 14px 30px #34433810; }
 .work-card > a:focus-visible { outline-offset: 5px; }
-.work-cover { background: #e5e0d1; padding: 24px; overflow: hidden; }
-.work-community .work-cover { background: #dbe5dc; }
-.work-greeting-card .work-cover { background: #ece0d9; }
-.work-music-station .work-cover { background: #dfe3e7; }
+/* 封面底色由作品数据里的 cover 字段决定（app.js 把它写在卡片的 --cover 上）。
+   加作品、换颜色都只改 content.js，不用回来加规则；
+   这条兜底色只在数据忘了写 cover 时生效。 */
+.work-cover { background: var(--cover, #e5e0d1); padding: 24px; overflow: hidden; }
 .work-cover img { display: block; width: 100%; height: auto; aspect-ratio: 1.65; object-fit: cover; object-position: top; border: 1px solid #ffffffb3; border-radius: 3px; box-shadow: 0 8px 20px #2b393614; transition: transform .4s ease; }
 .work-card > a:hover img { transform: scale(1.018); }
 .work-copy { position: relative; padding: 19px 26px 22px; }
